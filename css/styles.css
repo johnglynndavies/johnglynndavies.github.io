@@ -37,19 +37,29 @@ body {
 }
 p {
 	font-size: 16px;
-	margin: 0 0 0.5em
+	line-height: 1.3em;
+	margin: 0 0 0.5em;
+	color: #666666;
 }
 h2 {
 	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 22px;
+	line-height: 1.2em;
 	color: #250e62;
 	margin: 0 0 0.5em
+}
+h3 {
+	font-size: 20px;
+	line-height: 1.3em;
+	color: #250e62;
+	margin: 0 0 0.5em;
 }
 div.inner {
 	margin: 0 auto;
 	width: 940px;
 	padding: 20px;
 }
+
 nav .inner {
 	background: #250e62;
 	padding: 10px 15px;
@@ -70,7 +80,7 @@ nav a:hover, nav a.active {
 nav a:last-child {
 	border-right: none;
 }
-header {
+header, .bottom {
 	background: url('../images/grad-bg.png') repeat-x left bottom;
 }
 header .inner {
@@ -114,11 +124,20 @@ header .creds p {
 	padding-top: 20px;
 	float: right;
 }
+.ccards img {
+	margin: 2px 0;
+}
 .featured {
 	background-color: #b5dfff;
 }
 .featured h2 {
 	text-align: center;
+}
+footer {
+	border-top: 1px solid #eceae8;
+}
+footer p {
+	font-size: 14px;
 }
 .flex {
 	display: flex;
@@ -159,5 +178,6 @@ a.button span {
 	margin-top: 10px;
 	font-family: "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 16px;
+	line-height: 1.3em;
 	color: #666666;
 }
