@@ -64,6 +64,9 @@ h2 {
 	color: #250e62;
 	margin: 1em 0 0.5em
 }
+.featured h2 {
+	margin: 0 0 0.5em;
+}
 h3 {
 	font-size: 20px;
 	line-height: 1.3em;
