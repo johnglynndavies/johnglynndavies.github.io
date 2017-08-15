@@ -41,6 +41,13 @@ p {
 	margin: 0 0 0.5em;
 	color: #666666;
 }
+h1 {
+	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 36px;
+	line-height: 1.1em;
+	color: #250e62;
+	margin: 0 0 0.5em
+}
 h2 {
 	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
 	font-size: 22px;
@@ -53,6 +60,13 @@ h3 {
 	line-height: 1.3em;
 	color: #250e62;
 	margin: 0 0 0.5em;
+}
+blockquote {
+	background-color: #14dafe;
+	color: #000;
+	line-height: 1.3em;
+	padding: 20px;
+	margin: 0 0 20px;
 }
 div.inner {
 	margin: 0 auto;
