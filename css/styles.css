@@ -82,7 +82,7 @@ aside {
 	padding: 10px 20px;
 	border: 1px solid #eceae8;
 	flex: 0 1 auto !important;
-	margin-left: 20px;
+	margin-left: 20px; 
 }
 div.inner {
 	margin: 0 auto;
