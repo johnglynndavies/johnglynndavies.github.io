@@ -80,6 +80,15 @@ blockquote {
 	padding: 20px;
 	margin: 0 0 20px;
 }
+figure {
+	margin: 0 0 20px;
+}
+figcaption {
+	font-size: 0.9em;
+	line-height: 1.2em;
+	margin-top: 5px;
+	color: #000;
+}
 .flex {
 	display: flex;
 	flex-direction: column;
@@ -98,6 +107,9 @@ blockquote {
 	aside {
 		min-width: 300px;
 		margin-left: 20px; 
+	}
+	figure {
+		margin: 0 0 10px;
 	}
 }
 aside {
@@ -395,4 +407,17 @@ a.button span {
 }
 .twitter-follow-button {
 	margin-bottom: 20px;
+}
+section.main img {
+	width: 100%;
+	height: auto;
+}
+@media only screen and (min-width : 1024px) {
+	section.main img {
+		width: auto;
+		float: right;
+	}
+	section.main figure img {
+		width: 100%;
+	}
 }
