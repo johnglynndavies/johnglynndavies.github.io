@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="keywords" content="Gas engineer,boiler servicing, boiler installations, power flushing">
+<meta name="keywords" content="Gas engineer, boiler servicing, boiler installations, power flushing, plumbing staffordshire, gas engineer stoke, boiler service newcastle">
 <meta name="description" content="ProGas is an honest and reliable family-run business, servicing all areas of Newcastle-under-Lyme, Stoke-on-Trent and the surrounding areas.">
 <title>ProGas | Newcastle-under-Lyme | Professional, Honest, Reliable.</title>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/font-awesome.min.css">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 </head>
 <body class="home">
 <div id="fb-root"></div>
@@ -81,7 +82,11 @@
 			<p>We pride ourselves on providing a consistently high level of workmanship and customer care. We take exceptional pride in our work, providing all aspects of domestic gas heating and repair. Contact us today for a friendly discussion about your needs on 07948 371506 or follow us on our social media, below, for free tips and advice!</p>
 		</div>
 		<div>
-			
+			<div class="slider">
+    			<div><p class="quote">All work done from the quotation to the actual work was done in a courteous and  professional manner, all requirements and questions were explained and answered. The work was carried out in a safe and competent manner and any mess cleared away.</p><p class="author">Dave Stanton, Newcastle, Staffs</p></div>
+    			<div><p class="quote">Craig has done several jobs for me and I can honestly recommend him. Being an Engineer myself and owner of several properties, I like things to be right. Highly Recommended.</p><p class="author">Tony Birks BSc</p></div>
+    			<div><p class="quote">I would recommended Pro-Gas to any of my family or friends – Great service to a high standard that will not break the bank.</p><p class="author">Carl Morris, Basford</p></div>
+  			</div>
 		</div>
 	</div>
 </section>
@@ -97,12 +102,15 @@
 	</div>
 </footer>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 <script>
 $(document).ready(function(){
 	$('#menu').click(function(){
 		$('nav.mobile').slideToggle(200);
 		$(this).toggleClass('active');
 	});
+	
+	$('.slider').bxSlider();
 });
 </script>
 </body>
