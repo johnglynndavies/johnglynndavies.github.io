@@ -424,3 +424,33 @@ section.main img {
 		width: 100%;
 	}
 }
+
+.testimonials {
+	padding: 20px 0 0;
+}
+.testimonials .bx-wrapper {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #250e62;
+}
+.testimonials .bx-wrapper p {
+	color: #fff;	
+}
+.testimonials .bx-wrapper p.author {
+	text-align: right;	
+}
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a {
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border: 1px solid #14dafe;
+}
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a.active {
+	background-color: #14dafe;
+}
+@media only screen and (min-width : 1024px) {
+	.testimonials {
+		padding: 0 0 0 50px;
+	}
+}

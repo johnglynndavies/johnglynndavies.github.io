@@ -81,7 +81,7 @@
 			<h3>ProGas is a professional, honest and reliable family-run business.</h3>
 			<p>We pride ourselves on providing a consistently high level of workmanship and customer care. We take exceptional pride in our work, providing all aspects of domestic gas heating and repair. Contact us today for a friendly discussion about your needs on 07948 371506 or follow us on our social media, below, for free tips and advice!</p>
 		</div>
-		<div>
+		<div class="testimonials">
 			<div class="slider">
     			<div><p class="quote">All work done from the quotation to the actual work was done in a courteous and  professional manner, all requirements and questions were explained and answered. The work was carried out in a safe and competent manner and any mess cleared away.</p><p class="author">Dave Stanton, Newcastle, Staffs</p></div>
     			<div><p class="quote">Craig has done several jobs for me and I can honestly recommend him. Being an Engineer myself and owner of several properties, I like things to be right. Highly Recommended.</p><p class="author">Tony Birks BSc</p></div>
@@ -110,7 +110,9 @@ $(document).ready(function(){
 		$(this).toggleClass('active');
 	});
 	
-	$('.slider').bxSlider();
+	$('.slider').bxSlider({
+		controls: false
+	});
 });
 </script>
 </body>
