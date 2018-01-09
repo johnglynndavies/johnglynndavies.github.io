@@ -473,3 +473,6 @@ section.main img {
 		padding: 0 0 0 50px;
 	}
 }
+.IntroContent {
+	padding-top: 10px !important;
+}
