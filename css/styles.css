@@ -124,9 +124,9 @@ div.inner {
 }
 nav.desk {
 	display: none;
+	background: #250e62;
 }
 nav.desk .inner {
-	background: #250e62;
 	padding: 10px 15px;
 }
 nav a {
@@ -354,8 +354,24 @@ header .gsafe > img {
 .featured {
 	background-color: #b5dfff;
 }
-.featured h2 {
+.featured2 {
+	background-color: #ff8f00;
+}
+.featured h2,
+.featured2 h2 {
 	text-align: center;
+}
+.featured2 h2 {
+	margin: 0;
+}
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+.link:hover {
+	text-decoration: underline;
 }
 footer {
 	border-top: 1px solid #eceae8;
