@@ -1,0 +1,494 @@
+@font-face {
+    font-family: 'museo';
+    src: url('../fonts/Museo300-Regular-webfont.eot');
+    src: url('../fonts/Museo300-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Museo300-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Museo300-Regular-webfont.woff') format('woff'),
+         url('../fonts/Museo300-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Museo300-Regular-webfont.svg#museo300') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'museo';
+      src: url('../fonts/Museo500-Regular-webfont.eot');
+      src: url('../fonts/Museo500-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+           url('../fonts/Museo500-Regular-webfont.woff2') format('woff2'),
+           url('../fonts/Museo500-Regular-webfont.woff') format('woff'),
+           url('../fonts/Museo500-Regular-webfont.ttf') format('truetype'),
+           url('../fonts/Museo500-Regular-webfont.svg#museo500') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
+@font-face {
+	font-family: 'museo';
+	    src: url('../fonts/Museo700-Regular-webfont.eot');
+	    src: url('../fonts/Museo700-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+	         url('../fonts/Museo700-Regular-webfont.woff2') format('woff2'),
+	         url('../fonts/Museo700-Regular-webfont.woff') format('woff'),
+	         url('../fonts/Museo700-Regular-webfont.ttf') format('truetype'),
+	         url('../fonts/Museo700-Regular-webfont.svg#museo700') format('svg');
+	    font-weight: bold;
+	    font-style: normal;
+}
+body {
+	font-family: "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 1em;
+}
+p, li {
+	font-size: 16px;
+	line-height: 1.3em;
+	margin: 0 0 0.5em;
+	color: #666666;
+}
+ul, ol {
+	margin: 0 0 0 30px;
+}
+ul {
+	list-style-type: disc;
+}
+a {
+	color: #250e62;
+}
+h1 {
+	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 36px;
+	line-height: 1.1em;
+	color: #250e62;
+	margin: 0 0 0.5em
+}
+h2 {
+	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 22px;
+	line-height: 1.2em;
+	color: #250e62;
+	margin: 1em 0 0.5em
+}
+.featured h2 {
+	margin: 0 0 0.5em;
+}
+h3 {
+	font-size: 20px;
+	line-height: 1.3em;
+	color:#250e62;
+	margin: 0 0 0.5em;
+}
+blockquote {
+	background-color: #14dafe;
+	color: #000;
+	line-height: 1.3em;
+	padding: 20px;
+	margin: 0 0 20px;
+}
+figure {
+	margin: 0 0 20px;
+}
+figcaption {
+	font-size: 0.9em;
+	line-height: 1.2em;
+	margin-top: 5px;
+	color: #000;
+}
+.flex {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.flex.row {
+	flex-direction: row;
+}
+.flex > * {
+	flex: 1 1 auto;
+}
+.flex.equal > * {
+	flex: 1;
+}
+@media only screen and (min-width : 1024px) {
+	.flex {
+		flex-direction: row;
+	}
+	aside {
+		min-width: 300px;
+		margin-left: 20px; 
+	}
+	figure {
+		margin: 0 0 10px;
+	}
+}
+aside {
+	padding: 10px 20px;
+	border: 1px solid #eceae8;
+}
+div.inner {
+	padding: 20px;
+}
+nav.desk {
+	display: none;
+	background: #250e62;
+}
+nav.desk .inner {
+	padding: 10px 15px;
+}
+nav a {
+	display: inline-block;
+	padding: 2px 20px;
+	border-right: 1px solid rgba(255,255,255,0.2);
+	color: #fff;
+	text-decoration: none;
+	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+}
+nav.desk a:hover,
+nav.desk a.active {
+	text-decoration: underline;
+}
+nav.desk a:last-child {
+	border-right: none;
+}
+nav.mobile {
+	position: relative;
+	top: -40px;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: left;
+	padding: 40px 0 10px;
+	background: #250e62;
+}
+nav.mobile a {
+	display: block;
+	border: none;
+	padding: 10px;
+}
+nav.mobile a:hover,
+nav.mobile a:active {
+	background: #351391;
+}
+#panel {
+	position: relative;
+	z-index: 1;
+	font-family: "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+	text-align: right;
+}
+#panel > a {
+	position: relative;
+	right: 0;
+	z-index: 2;
+	color: #250e62;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px;
+}
+#panel > a i,
+#panel > a {
+	transition: color 0.6s ease;
+}
+#panel > a:hover i,
+#panel > a.active i {
+	color: #14dafe;	
+}
+#panel > a.active {
+	color: #fff;	
+}
+#panel nav.mobile {
+	display: none;
+}
+@media only screen and (min-width : 1024px) {
+	div.inner {
+		margin: 0 auto;
+		width: 940px;
+	}
+	nav.desk {
+		display: block;
+	}
+	#panel {
+		display: none;
+	}
+}
+header, .bottom {
+	background: url('../images/grad-bg.png') repeat-x left bottom;
+}
+header .inner {
+	padding: 0;
+	position: relative;
+}
+header .img {
+	position: relative;
+	background: url('../images/banner-bg.jpg') no-repeat 80% bottom;
+	background-size: cover;
+	height: 140px;
+	padding: 0;
+}
+header .man {
+	position: absolute;
+	right: 0;
+	bottom: 0px;
+	width: auto;
+	height: 150px;
+}
+header .cta {
+	padding: 10px 20px 10px;
+	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	text-align: left;
+}
+header .cta img {
+	width: 150px;
+	height: auto;
+	max-width: 150px;
+	border: none;
+}
+.cta.flex {
+	align-items: center;
+}
+.cta.flex a {
+	flex: 0 0 auto;
+}
+.home header .cta {
+	text-align: center;
+}
+.home header .cta img {
+	width: 100%;
+}
+header .cta p {
+	margin-bottom: 0px;
+	font-size: 28px;
+	text-align: center;
+	color: #250e62;
+	font-weight: bold;	
+}
+.home header .cta p {
+	font-size: 9vw;
+}
+@media only screen and (min-width : 1024px) {
+	header .cta img {
+		max-width: 244px;
+	}
+	header .img {
+		background-position: left bottom;
+		height: 364px;
+	}
+	header .man {
+		right: -15px;
+		bottom: 0px;
+		height: 374px;
+	}
+	body.home header .cta {
+		position: absolute;
+		z-index: 9;
+		padding: 40px 20px;
+		width: 300px;
+	}
+	.home header .cta img {
+		margin-bottom: 20px;
+		width: auto;
+	}
+	.home header .cta p {
+		font-size: 37px;
+	}
+}
+header .creds {
+	text-align: left;
+	padding: 10px 0;
+}
+header .creds p {
+	font-size: 12px;
+}
+header .creds > div {
+	text-align: center;
+}
+header .gsafe > img {
+	width: auto;
+	max-height: 55px;
+}
+.home .flex.ccards {
+	justify-content: center;
+}
+.flex.ccards > * {
+	flex: 0 1 auto;
+}
+.ccards img {
+	margin: 0 2px;
+	max-height: 25px;
+}
+@media only screen and (min-width : 1024px) {
+	.home header .creds {
+		position: absolute;
+		right: 20px;
+		top: 20px;
+	}
+	.home .ccards {
+		padding: 20px 10px 0;
+	}
+	.home .ccards img {
+		margin: 2px 0;
+		max-height: 100%;
+	}
+	.home .ccards {
+		width: 60px;
+		padding-top: 20px;
+	}
+	
+	.flex.creds {
+		flex-direction: row;
+		align-items: center;
+		flex-grow: 0;
+	}
+	header .gsafe {
+		padding: 0 20px 0 0;
+	}
+	.home header .gsafe {
+		padding: 0;
+	}
+	.home .flex.creds {
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	header .gsafe > img {
+		max-height: 90px;
+	}	
+	.home header .gsafe > img {
+		max-height: 100%;
+	}
+}
+.featured {
+	background-color: #b5dfff;
+}
+.featured2 {
+	background-color: #ff8f00;
+}
+.featured h2,
+.featured2 h2 {
+	text-align: center;
+}
+.featured2 h2 {
+	margin: 0;
+}
+.link {
+	text-decoration: none;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-family: "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+.link:hover {
+	text-decoration: underline;
+}
+footer {
+	border-top: 1px solid #eceae8;
+	text-align: right;
+}
+footer p {
+	font-size: 14px;
+}
+a.button {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	min-width: 205px;
+	margin: 0 0 10px 0;
+	background-color: #fff;
+	padding: 20px 20px 40px;
+	font-size: 22px;
+	color: #250e62;
+	text-decoration: none;
+	font-family: "Museo", "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+}
+a.button i {
+	position: absolute;
+	bottom: 15px;
+	right: 10px;
+	color: #14dafe;
+}
+a.button:hover {
+	background-color: #250e62;
+	color: #fff;
+}
+a.button:hover span {
+	color: #fff;
+}
+a.button span {
+	display: block;
+	margin-top: 10px;
+	font-family: "Gill Sans", "Trebuchet MS", Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 1.3em;
+	color: #666666;
+}
+@media only screen and (min-width : 1024px) {
+	a.button {
+		display: inline-block;
+		min-width: 205px;
+		margin: 0 20px 10px 0;
+	}
+	a.button:last-child {
+		margin-right: 0;
+	}
+}
+.twitter-follow-button {
+	margin-bottom: 20px;
+}
+section.main img {
+	width: 100%;
+	height: auto;
+}
+@media only screen and (min-width : 1024px) {
+	section.main img {
+		width: auto;
+		float: right;
+	}
+	section.main figure img {
+		width: 100%;
+	}
+}
+
+.testimonials {
+	padding: 20px 0 0;
+}
+.testimonials .bx-wrapper {
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	background-color: #250e62;
+	padding: 20px;
+}
+.testimonials .bx-wrapper::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: -30px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 34px 50px 0 0;
+	border-color: #240e62 transparent transparent transparent;
+}
+.testimonials .bx-wrapper p {
+	color: #fff;	
+}
+.testimonials .bx-wrapper p.author {
+	text-align: right;	
+	margin-bottom: 0;
+}
+.testimonials .bx-wrapper .bx-pager {
+	left: 0;
+	text-align: right;
+}
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a {
+	width: 15px;
+	height: 15px;
+	background-color: #fff;
+	border: 1px solid #14dafe;
+	border-radius: 50%;
+}
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a.active,
+.testimonials .bx-wrapper .bx-pager.bx-default-pager a:hover {
+	background-color: #14dafe;
+}
+@media only screen and (min-width : 1024px) {
+	.testimonials {
+		padding: 0 0 0 50px;
+	}
+}
+.IntroContent {
+	padding-top: 10px !important;
+}
